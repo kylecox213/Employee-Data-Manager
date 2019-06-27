@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Sign-Up Today!</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+  <!-- LINK TO FIREBASE GOES HERE -->
+  <script src="https://www.gstatic.com/firebasejs/6.2.3/firebase-app.js"></script>
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <br>
+
+    <!-- Jumbotron -->
+    <div class="jumbotron">
+      <h1 class="text-center">Employee Data Management</h1>
+      <p class="text-center">A Comprehensive Directory of Employee Billable Hours</p>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="card">
+          <div class="card-header">
+            Current Employees
+          </div>
+          <div class="card-body">
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Role</th>
+                  <th scope="col">Start Date</th>
+                  <th scope="col">Months Worked</th>
+                  <th scope="col">Monthly Rate ($)</th>
+                  <th scope="col">Total Billed ($)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Billy Simms</td>
+                  <td>CEO</td>
+                  <td>@01/01/1978</td>
+                  <td>3000</td>
+                  <td>245</td>
+                  <td>500000</td>
+
+
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Jon Johnson</td>
+                  <td>Bufflehead</td>
+                  <td>@08/08/1985</td>
+                  <td>4000</td>
+                  <td>177</td>
+                  <td>300000</td>
+
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td colspan="2">Hank Hill</td>
+                  <td>Propane Salesman</td>
+                  <td>09/08/1994</td>
+                  <td>102</td>
+                  <td>120000</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+
+
+    <div class="col-lg-12">
+      <div class="card card-default">
+        <div class="card-header">
+          Employee Data Management
+        </div>
+        <div class="card-body" <form role="form">
+          <div class="form-group row">
+            <label for="name-input">Employee Name</label>
+            <input class="form-control" id="name-input" type="text">
+          </div>
+          <div class="form-group row">
+            <label for="email-input">Role</label>
+            <input class="form-control" id="role-input" type="text">
+          </div>
+          <div class="form-group row">
+            <label for="age-input">Start Date (MM/DD/YYYY)</label>
+            <input class="form-control" id="date-input" type="date">
+          </div>
+          <div class="form-group row">
+            <label for="comment-input">Monthly Rate</label>
+            <input class="form-control" id="rate-input" type="text">
+          </div>
+          <button type="button" class="btn btn-danger" id="submit">Submit</button>
+          </form>
+          
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>    
+  <script src="assets/javascript/app.js"></script>
+
+</body>
+
+</html>
